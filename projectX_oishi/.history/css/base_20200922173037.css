@@ -1,0 +1,383 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+body{
+	color:#000000;
+	font-family:"Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+	font-weight:400;
+	font-style:normal;
+	font-weight:400;
+	font-style:normal;
+	font-size:15px;
+	line-height:2.15em;
+	letter-spacing:0.05em;
+	overflow-x:hidden;
+	background-color:#FFF;
+}
+img{
+	border:none;
+	vertical-align:bottom;
+}
+a{
+	color:#000000;
+	text-decoration:none;
+	transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+}
+a:hover {
+	text-decoration:none;
+}
+ul{
+	list-style-type:none;
+}
+hr{
+	display:none;
+	clear:both;
+}
+.left {
+	float:left!important;
+}
+.clear_both {
+	float:none!important;
+}
+.right {
+	float:right!important;
+}
+/******************** LOADING ********************/
+#loading {
+	height:100%;
+	width:100%;
+	position:fixed;
+	z-index:200;
+	left:0px;
+	top:0px;
+	background-color:#FFF;
+}
+#loading div {
+	position:absolute;
+	left:50%;
+	top:50%;
+	height:90px;
+	width:80px;
+	margin-top:-45px;
+	margin-left:-40px;
+	background-image:url(../images/668x134.png);
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-size:62px auto;
+	padding-top:62px;
+	box-sizing:border-box;
+	text-align:center;
+}
+#loading div span {
+	font-size:12px;
+	font-family:'Abel', sans-serif;
+	font-weight:400;
+	letter-spacing:0.25em;
+}
+/******************** ヘッダー ********************/
+header {
+    float:left;
+    width:100%;
+    height: 130px;
+    position:relative;
+    z-index: 1;
+}
+header h1 {
+    float:left;
+    width:321px;
+    height:72px;
+    position:absolute;
+    top:47px;
+    left:45px;
+    background-position:left top;
+    background-repeat:no-repeat;
+    background-size:contain;
+    text-indent:-9999px;
+}
+header .s_menu {
+    display:none;
+}
+header #mainnavi {
+    float:right;
+    width:666px;
+    position:absolute;
+    top: 45px;
+    right:60px;
+}
+header #mainnavi .navi01 {
+    float:left;
+    width:406px;
+    position:relative;
+    margin-right:40px;
+}
+header #mainnavi .navi01 li {
+    float:left;
+    position:relative;
+    margin-right:25px;
+}
+header #mainnavi .navi01 li:last-child {
+    margin-right:0px;
+}
+header #mainnavi .navi01 li a {
+    position:relative;
+    font-size:17px;
+    padding-bottom:8px;
+    box-sizing:border-box;
+}
+header #mainnavi .navi01 li a:before {
+    content:"";
+    width:0px;
+    height:2px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    background-color:#000000;
+    transition:all 0.8s ease;
+	-webkit-transition:all 0.8s ease;
+}
+header #mainnavi .navi01 li a:hover:before {
+    width:100%;
+}
+header #mainnavi .tel01 {
+    display:block;
+    float:left;
+    width:219px;
+    position:relative;
+    font-size:20px;
+    letter-spacing:0.1em;
+    border-left:2px solid #000000;
+    padding-left:33px;
+    box-sizing:border-box;
+}
+@media screen and (min-width:740px) and ( max-width:1199px) {
+header h1 {
+    width:284px;
+    height:64px;
+}
+}
+/******************** 写真ギャラリー ********************/
+#photo {
+	float:left;
+	width:100%;
+	position:relative;
+    margin-top:150px;
+}
+#photo .photo_carousel {
+	float:left;
+	width:100%;
+	position:relative;
+}
+#photo .photo_carousel a {
+	float:left;
+	width:240px;
+	height:240px;
+}
+#photo .photo_carousel a:hover {
+    opacity:0.5;
+}
+#photo .photo_carousel picture {
+    float:left;
+    width:100%;
+    height:100%;
+}
+#photo .photo_carousel img {
+	display:block;
+	width:100%;
+	height:240px;
+	object-fit:cover;
+}
+/******************** フッター ********************/
+footer {
+    float:left;
+    width:100%;
+    position:relative;
+    padding-top:130px;
+    box-sizing:border-box;
+}
+footer .footer_info {
+    float:left;
+    width:100%;
+    position:relative;
+    padding-bottom:90px;
+    box-sizing:border-box;
+}
+footer .footer_info .oishi_info {
+	float:left;
+	width:100%;
+	position:relative;
+	margin-bottom:50px;
+}
+footer .footer_info .oishi_info h1 {
+    float:left;
+    width:30.9%;
+    max-width:334px;
+    height:68px;
+    position:relative;
+    background-image:url("../images/668x134.png");
+    background-position:left top;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    text-indent:-9999px;
+    margin-right: 3%;
+}
+footer .footer_info .oishi_info .address {
+    float:left;
+    width: 21.85%;
+    max-width: 236px;
+    position:relative;
+    font-size:16px;
+    letter-spacing: 0em;
+    margin-right: 3%;
+}
+footer .footer_info .oishi_info .tel {
+    float: left;
+    width: 19.3%;
+    max-width: 208px;
+    position:relative;
+}
+footer .footer_info .oishi_info .tel dt {
+    float:left;
+    width:100%;
+    font-size:14px;
+    letter-spacing:0em;
+    line-height:1.8em;
+}
+footer .footer_info .oishi_info .tel dd {
+    float:left;
+    width:100%;
+}
+footer .footer_info .oishi_info .tel dd a {
+	font-size:22px;
+	letter-spacing:0.1em;
+}
+footer .footer_info .reserve_btn {
+    float: right;
+    width: 18.5%;
+    max-width: 200px;
+    position: relative;
+    text-align: center;
+    background-color: #87C357;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+}
+footer .footer_info .reserve_btn span {
+    display: inline-block;
+    color: #FFF;
+    font-size: 17px;
+    background-image: url("../images/icon_reserve.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 17px auto;
+    padding-left: 23px;
+    box-sizing: border-box;
+}
+footer .footer_info .medical_info {
+    float:left;
+    width:48.1%;
+    max-width:520px;
+    position:relative;
+}
+footer .footer_info .medical_info .medical01 {
+    float:left;
+    width:100%;
+    position:relative;
+    margin-bottom:20px;
+}
+footer .footer_info .medical_info .medical01:last-child {
+    margin-bottom:0px;
+}
+footer .footer_info .medical_info .medical01 dt {
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-size:18px;
+    letter-spacing:0.1em;
+    z-index:1;
+}
+footer .footer_info .medical_info .medical01 dt:before {
+    content:"";
+    width:37px;
+    height:2px;
+    position:absolute;
+    top:15px;
+    right:-50px;
+    background-color:#000000;
+}
+footer .footer_info .medical_info .medical01 dd {
+    float:left;
+    width:100%;
+    position:relative;
+    font-size:16px;
+    padding-left:145px;
+    box-sizing:border-box;
+}
+footer .footer_info .medical_hours {
+    float:right;
+    width:44.4%;
+    max-width:480px;
+    position:relative;
+    font-size:16px;
+}
+footer .footer_info .medical_hours .hours01 {
+    width:100%;
+    position:relative;
+    text-align:center;
+    border-collapse:separate;
+    border-spacing:0;
+    border-bottom:2px solid #000000;
+    box-sizing:border-box;
+    margin-bottom:15px;
+}
+footer .footer_info .medical_hours .hours01 th {
+    border-bottom:2px solid #000000;
+    font-weight:normal;
+    padding-bottom:10px;
+}
+footer .footer_info .medical_hours .hours01 td {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+footer .footer_info .copyright {
+    float:left;
+    width:100%;
+    position:relative;
+    font-size:11px;
+    letter-spacing:0.25em;
+    margin-top:40px;
+}
+footer .footer_info .dog {
+    width:219px;
+    position:absolute;
+    bottom:-4px;
+    left:50%;
+    margin-left:-90px;
+    z-index:1;
+}
+@media screen and (min-width:740px) and ( max-width:1199px) {
+footer .footer_info .oishi_info .address {
+    font-size: 15px;
+}
+footer .footer_info .oishi_info .tel dd a {
+    font-size: 19px;
+}
+}
+#map {
+    float:left;
+    width:100%;
+    height:480px;
+    position:relative;
+}
+#map iframe {
+    height:480px;
+}
+.sp {
+    display:none;
+}
+#reserve {
+    display: none;
+}

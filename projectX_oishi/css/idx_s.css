@@ -1,0 +1,499 @@
+@charset "UTF-8";
+/* CSS Document */
+#idx_containar {
+    width:100%;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index:0;
+    overflow:hidden;
+}
+#idx_contents {
+    float:left;
+    width:100%;
+    position:relative;
+    padding-top: 25px;
+    box-sizing:border-box;
+}
+/******************** メイン ********************/
+#idx_main {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-top: 67px;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+#idx_main .main01 {
+    float:left;
+    width:100%;
+    height: 100%;
+    position:relative;
+    margin-bottom:20px;
+}
+#idx_main .main01 #photo_gallery {
+    float:left;
+    width:100%;
+    height:100%;
+    position:relative;
+}
+#idx_main .main01 #photo_gallery .caroufredsel_wrapper {
+	height:100%!important;
+}
+#idx_main .main01 #photo_gallery .gallery_carousel {
+	height:100%!important;
+	overflow:hidden;
+}
+#idx_main .main01 .gallery_carousel li {
+	float:left;
+	width:100%;
+	height:100%;
+}
+#idx_main .main01 .gallery_carousel img {
+	display:block;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	object-position:center center;
+}
+#idx_main .main01 .cat {
+    width:80px;
+    position:absolute;
+    bottom:-63px;
+    right: 15px;
+    z-index:1;
+}
+#idx_main .main01 .logo {
+    display:none;
+}
+#idx_main .main01 h2 {
+    width:225px;
+    height: 160px;
+    position:absolute;
+    top: 50%;
+    left:25px;
+    margin-top: -80px;
+    font-size:15px;
+    letter-spacing:0.1em;
+    line-height:1.8em;
+    z-index:1;
+}
+#idx_main .main01 h2 span {
+    display:inline-block;
+    width:100%;
+    font-size:10px;
+    letter-spacing:0.2em;
+    line-height:2.1em;
+    padding-top:10px;
+    box-sizing:border-box;
+}
+#idx_main .main02 {
+    float:left;
+    width:100%;
+    position:relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing:border-box;
+}
+#idx_main .main02 .copy01 {
+    float:left;
+    width: 77%;
+    position:relative;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    line-height: 1.6em;
+}
+#idx_main .main02 .sns {
+    float:left;
+    width:100%;
+    position:relative;
+}
+#idx_main .main02 .sns li {
+    float:left;
+    position:relative;
+}
+#idx_main .main02 .sns li a {
+    font-size:11px;
+    letter-spacing:0.25em;
+}
+#idx_main .main02 .sns .facebook {
+    margin-right:15px;
+}
+#idx_main .main02 .sns .facebook:before {
+    content:"/";
+    position:absolute;
+    top:0px;
+    right:-9px;
+    font-size:10px;
+}
+/******************** ABOUT US ********************/
+#idx_about {
+    float:left;
+    width:100%;
+    position:relative;
+    margin-bottom:80px;
+}
+#idx_about #about_gallery {
+    float:left;
+    width:100%;
+    position:relative;
+}
+#idx_about .about01 {
+    float:left;
+    width:100%;
+    position:relative;
+    margin-bottom:60px;
+}
+#idx_about .about01 .back {
+    width:67.2%;
+    max-width:194px;
+    position:absolute;
+    top:-23px;
+    right:-65px;
+}
+#idx_about .about01 h1 {
+    float:left;
+    width:100%;
+    position:relative;
+    font-size:12px;
+    letter-spacing:0.2em;
+    margin-bottom:10px;
+}
+#idx_about .about01 h2 {
+    float:left;
+    width:100%;
+    position:relative;
+    font-size:17px;
+    letter-spacing:0.1em;
+    line-height:2.1em;
+    margin-bottom:15px;
+}
+/******************** 診療案内 ********************/
+#idx_information {
+    float:left;
+    width:100%;
+    position:relative;
+}
+#idx_information h1 {
+    float:left;
+    width:100%;
+    position:relative;
+    text-align:center;
+    font-size:22px;
+    letter-spacing:0.1em;
+    padding-top:78px;
+    box-sizing:border-box;
+    margin-bottom:30px;
+}
+#idx_information h1 span {
+    float:left;
+    width:100%;
+    font-size:10px;
+    letter-spacing:0.2em;
+    box-sizing:border-box;
+}
+#idx_information h1:before {
+    content:"";
+    width:60px;
+    height:60px;
+    position:absolute;
+    top:34px;
+    left:50%;
+    margin-left:-30px;
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    background:transparent;
+    -webkit-box-shadow:inset 0 0 0 2px #000000;
+    box-shadow:inset 0 0 0 2px #000000;
+    clip:rect(0px, 60px, 30px, auto);
+    -webkit-clip-path:rectangle(50%, 50%, 100%, 100%, 0, 0);
+}
+#idx_information h1:after {
+    content:"";
+    width:2px;
+    height:34px;
+    position:absolute;
+    top:0px;
+    left:50%;
+    margin-left:-2px;
+    background-color:#000000;
+}
+#idx_information .info01 {
+    float:left;
+    width:100%;
+    position:relative;
+}
+#idx_information .info01 .info_list {
+    float:left;
+    width:100%;
+    position:relative;
+    margin-bottom:60px;
+}
+#idx_information .info01 .info_list li {
+    float:left;
+    width:100%;
+    position:relative;
+    margin-bottom:60px;
+}
+#idx_information .info01 .info_list li:last-child {
+    margin-bottom:0px;
+}
+#idx_information .info01 .info_list li a {
+	float:left;
+	width:100%;
+}
+#idx_information .info01 .info_list li a picture {
+    float:left;
+    width:100%;
+    position:relative;
+    margin-bottom:20px;
+}
+#idx_information .info01 .info_list li a .info_name {
+    float:left;
+    width:100%;
+    position:relative;
+    font-size:20px;
+    letter-spacing:0.1em;
+    border-bottom:2px solid #000000;
+    padding-bottom:18px;
+    box-sizing:border-box;
+}
+#idx_information .info01 .info_list li a .info_name span {
+    display:inline-block;
+    position:relative;
+    top:-3px;
+    font-size:10px;
+    letter-spacing:0.2em;
+    line-height:1em;
+    margin-left:12px;
+}
+#idx_information .info01 .info_list li a .info_name:before {
+    content:"";
+    width:10px;
+    height:2px;
+    position:absolute;
+    bottom:2px;
+    right:0px;
+    background-color:#000000;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+}
+#idx_information .info_img {
+    float:left;
+    width:120%;
+    height:290px;
+    position:relative;
+    margin-left:-10%;
+}
+#idx_information .info_img img {
+	width:100%;
+	height:290px;
+	object-fit:cover;
+}
+/******************** ブログ ********************/
+#idx_blog {
+    float:left;
+    width:100%;
+    position:relative;
+    margin-top:80px;
+}
+#idx_blog h1 {
+    float:left;
+    width:280px;
+    height:60px;
+    position:relative;
+    left:50%;
+    margin-left:-140px;
+    text-align:center;
+    font-size:20px;
+    letter-spacing:0.1em;
+    margin-bottom:40px;
+}
+#idx_blog h1 .circle {
+    float:left;
+    width:100%;
+    padding-top:8px;
+    box-sizing:border-box;
+}
+#idx_blog h1 .en {
+    float:left;
+    width:100%;
+    font-size:10px;
+    letter-spacing:0.2em;
+    line-height:2.15em;
+}
+#idx_blog h1:before {
+    content:"";
+    width:33px;
+    height:2px;
+    position:absolute;
+    top:30px;
+    left:0px;
+    background-color:#000000;
+}
+#idx_blog h1:after {
+    content:"";
+    width:33px;
+    height:2px;
+    position:absolute;
+    top:30px;
+    right:0px;
+    background-color:#000000;
+}
+#idx_blog h1 .circle:before {
+    content:"";
+    width:60px;
+    height:60px;
+    position:absolute;
+    top:0px;
+    left:33px;
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    background:transparent;
+    -webkit-box-shadow:inset 0 0 0 2px #000000;
+    box-shadow:inset 0 0 0 2px #000000;
+    clip:rect(auto, 30px, 60px, auto);
+    -webkit-clip-path:rectangle(50%, 50%, 100%, 100%, 0, 0);
+}
+#idx_blog h1 .circle:after {
+    content:"";
+    width:60px;
+    height:60px;
+    position:absolute;
+    top:0px;
+    right:33px;
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    background:transparent;
+    -webkit-box-shadow:inset 0 0 0 2px #000000;
+    box-shadow:inset 0 0 0 2px #000000;
+    clip:rect(auto, auto, 60px, 30px);
+    -webkit-clip-path:rectangle(50%, 50%, 100%, 100%, 0, 0);
+}
+#idx_blog .blog01 {
+    display:block;
+    float:left;
+    width:100%;
+    min-height:90px;
+    position:relative;
+    margin-bottom:30px;
+}
+#idx_blog .blog01:nth-child(2n) {
+    float:right;
+}
+#idx_blog .blog01 .blog_img {
+    width:90px;
+    height:90px;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+#idx_blog .blog01 .blog_img img {
+    width:100%;
+    height:90px;
+    object-fit:cover;
+}
+#idx_blog .blog01 .blog_info {
+    float:left;
+    width:100%;
+    position:relative;
+    padding-left:114px;
+    box-sizing:border-box;
+}
+#idx_blog .blog01 .blog_info h4 {
+    float:left;
+    width:100%;
+    position:relative;
+    font-weight:normal;
+    line-height:1.9em;
+}
+#idx_blog .blog01 .blog_info .date {
+    float:left;
+    width:100%;
+    position:relative;
+    color:#999999;
+    font-size:12px;
+    letter-spacing:0.2em;
+}
+/******************** お知らせ ********************/
+#idx_news {
+    float:left;
+    width:100%;
+    position:relative;
+    margin-top:80px;
+}
+#idx_news h1 {
+    float:left;
+    width:203px;
+    position:relative;
+    font-size:22px;
+    letter-spacing:0.1em;
+    margin-bottom:20px;
+}
+#idx_news h1 span {
+    display:inline-block;
+    position:relative;
+    top:-3px;
+    font-size:10px;
+    letter-spacing:0.2em;
+    margin-left:12px;
+}
+#idx_news .news01 {
+    float:left;
+    width:100%;
+    min-height:99px;
+    position:relative;
+}
+#idx_news .news01 .news_list {
+    float:left;
+    width:100%;
+    position:relative;
+    margin-bottom:20px;
+    letter-spacing:0.1em;
+}
+#idx_news .news01 .news_list dt {
+    float:left;
+    width:100%;
+}
+#idx_news .news01 .news_list dd {
+    float:left;
+    width:100%;
+}
+#idx_news .more {
+    float:right;
+    position:relative;
+    letter-spacing:0em;
+    padding-right:25px;
+    box-sizing:border-box;
+}
+#idx_news .more:before {
+    content:"";
+    width:12px;
+    height:1px;
+    position:absolute;
+    top:13px;
+    right:0px;
+    background-color:#000000;
+    transform:rotate(25deg);
+    -webkit-transform:rotate(25deg);
+    -moz-transform:rotate(25deg);
+}
+#idx_news .more:after {
+    content:"";
+    width:12px;
+    height:1px;
+    position:absolute;
+    top:18px;
+    right:0px;
+    background-color:#000000;
+    transform:rotate(-25deg);
+    -webkit-transform:rotate(-25deg);
+    -moz-transform:rotate(-25deg);
+}

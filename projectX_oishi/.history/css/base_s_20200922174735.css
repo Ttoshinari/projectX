@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+body{
+	color:#000000;
+	font-family:"Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+	font-weight:400;
+	font-style:normal;
+	font-weight:400;
+	font-style:normal;
+	font-size:15px;
+	line-height:2.15em;
+	letter-spacing:0.05em;
+	overflow-x:hidden;
+	background-color:#FFF;
+}
+img{
+	border:none;
+	vertical-align:bottom;
+}
+a{
+	color:#000000;
+	text-decoration:none;
+	transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+}
+a:hover {
+	text-decoration:none;
+}
+ul{
+	list-style-type:none;
+}
+hr{
+	display:none;
+	clear:both;
+}
+.left {
+	float:left!important;
+}
+.clear_both {
+	float:none!important;
+}
+.right {
+	float:right!important;
+}
+/******************** LOADING ********************/
+#loading {
+	height:100%;
+	width:100%;
+	position:fixed;
+	z-index:200;
+	left:0px;
+	top:0px;
+	background-color:#FFF;
+}
+#loading div {
+	position:absolute;
+	left:50%;
+	top:50%;
+	height:90px;
+	width:80px;
+	margin-top:-45px;
+	margin-left:-40px;
+	background-image:url(../images/668x134.png);
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-size:62px auto;
+	padding-top:62px;
+	box-sizing:border-box;
+	text-align:center;
+}
+#loading div span {
+	font-size:12px;
+	font-family:'Abel', sans-serif;
+	font-weight:400;
+	letter-spacing:0.25em;
+}
+/******************** ヘッダー ********************/
+header {
+    float:left;
+    width:100%;
+    height:67px;
+    position:relative;
+    z-index:1;
+}
+header h1 {
+    float:left;
+    width:161px;
+    height:36px;
+    position:absolute;
+    top:15px;
+    left:15px;
+    background-image:url("../images/275x160.png");
+    background-position:left top;
+    background-repeat:no-repeat;
+    background-size:contain;
+    text-indent:-9999px;
+    z-index:1;
+}
+header .s_menu {
+	background-image:url(../images/s_menu_off.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:27px auto;
+	background-color:#FFF;
+	height:40px;
+	width:40px;
+	display:block;
+	text-indent:-9999px;
+	position:fixed;
+	top:12px;
+	right:10px;
+	z-index:11;
+}
+header .s_menu.select {
+	background-image:url(../images/s_menu_on.png);
+	background-size:29px auto;
+}
+header #mainnavi {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background-color: #FFF;
+    display:none;
+}
+header #mainnavi .navi01 {
+    float:left;
+    width:90%;
+    position:relative;
+    margin-top:67px;
+    margin-left:5%;
+}
+header #mainnavi .navi01 li {
+    float:left;
+    width:100%;
+    position:relative;
+    text-align:center;
+}
+header #mainnavi .navi01 li:last-child {
+    margin-right:0px;
+}
+header #mainnavi .navi01 li a {
+    float:left;
+    width:100%;
+    position:relative;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing:border-box;
+}
+header #mainnavi .navi01 li a:before {
+    content:"";
+    width:0px;
+    height:2px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    background-color:#000000;
+}
+header #mainnavi .tel01 {
+    display:block;
+    width:100%;
+    height:70px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    text-align:center;
+    color:#FFF;
+    font-size:22px;
+    letter-spacing:0.1em;
+    background-color:#87c357;
+    padding-top:18px;
+    box-sizing:border-box;
+    display: none;
+}
+/******************** 写真ギャラリー ********************/
+#photo {
+	float:left;
+	width:100%;
+	position:relative;
+	margin-top:80px;
+}
+#photo .photo_carousel {
+	float:left;
+	width:100%;
+	position:relative;
+}
+#photo .photo_carousel a {
+	float:left;
+	width:240px;
+	height:240px;
+}
+#photo .photo_carousel picture {
+    float:left;
+    width:100%;
+    height:100%;
+}
+#photo .photo_carousel img {
+	display:block;
+	width:100%;
+	height:240px;
+	object-fit:cover;
+}
+/******************** フッター ********************/
+footer {
+    float:left;
+    width:100%;
+    position:relative;
+    padding-top:60px;
+    box-sizing:border-box;
+}
+footer .footer_info {
+    float:left;
+    width:100%;
+    position:relative;
+    padding-bottom:130px;
+    box-sizing:border-box;
+}
+footer .footer_info .oishi_info {
+	float:left;
+	width:100%;
+	position:relative;
+	margin-bottom:40px;
+}
+footer .footer_info .oishi_info h1 {
+    float:left;
+    width: 250px;
+    height: 50px;
+    position:relative;
+    left:50%;
+    margin-left: -125px;
+    background-image:url("../images/668x134.png");
+    background-position:left top;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    text-indent:-9999px;
+    margin-bottom:20px;
+}
+footer .footer_info .oishi_info .address {
+    float:left;
+    width:100%;
+    position:relative;
+    text-align:center;
+    font-size:16px;
+    letter-spacing:0.1em;
+    margin-bottom:20px;
+}
+footer .footer_info .oishi_info .tel {
+    float:left;
+    width:100%;
+    position:relative;
+    text-align:center;
+    margin-bottom: 30px;
+}
+footer .footer_info .oishi_info .tel dt {
+    float:left;
+    width:100%;
+    font-size:14px;
+    letter-spacing:0em;
+}
+footer .footer_info .oishi_info .tel dd {
+    float:left;
+    width:100%;
+}
+footer .footer_info .oishi_info .tel dd a {
+	font-size:22px;
+	letter-spacing:0.1em;
+}
+footer .footer_info .reserve_btn {
+    float: left;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: #87C357;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+}
+footer .footer_info .reserve_btn span {
+    display: inline-block;
+    color: #FFF;
+    font-size: 18px;
+    background-image: url("../images/icon_reserve.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+footer .footer_info .medical_info {
+    float:left;
+    width:100%;
+    position:relative;
+    text-align:center;
+    margin-bottom:30px;
+}
+footer .footer_info .medical_info .medical01 {
+    float:left;
+    width:100%;
+    position:relative;
+    margin-bottom:20px;
+}
+footer .footer_info .medical_info .medical01:last-child {
+    margin-bottom:0px;
+}
+footer .footer_info .medical_info .medical01 dt {
+    float:left;
+    width:100%;
+    position:relative;
+    font-size:18px;
+    letter-spacing:0.1em;
+}
+footer .footer_info .medical_info .medical01 dd {
+    float:left;
+    width:100%;
+    position:relative;
+    font-size:14px;
+    letter-spacing:0em;
+}
+footer .footer_info .medical_hours {
+    float:left;
+    width:100%;
+    position:relative;
+    font-size:16px;
+}
+footer .footer_info .medical_hours .hours01 {
+    width:100%;
+    position:relative;
+    text-align:center;
+    border-collapse:separate;
+    border-spacing:0;
+    border-bottom:2px solid #000000;
+    box-sizing:border-box;
+    margin-bottom:15px;
+}
+footer .footer_info .medical_hours .hours01 th {
+    border-bottom:2px solid #000000;
+    font-weight:normal;
+    padding-bottom:10px;
+}
+footer .footer_info .medical_hours .hours01 td {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+footer .footer_info .copyright {
+    float:left;
+    width:100%;
+    position:relative;
+    text-align:center;
+    font-size:11px;
+    letter-spacing:0.25em;
+    margin-top:30px;
+}
+footer .footer_info .dog {
+    width:110px;
+    position:absolute;
+    bottom:-4px;
+    left:50%;
+    margin-left:-55px;
+    z-index:1;
+}
+#map {
+    float:left;
+    width:100%;
+    height:480px;
+    position:relative;
+}
+#map iframe {
+    height:480px;
+}
+.pc {
+    display:none;
+}
+#reserve {
+	width:100%;
+	height: 70px;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color:#FFF;
+	box-shadow:0px 0px 10px 0px #00000014;
+	-webkit-box-shadow:0px 0px 10px 0px #00000014;
+	-moz-box-shadow:0px 0px 10px 0px #00000014;
+	box-sizing:border-box;
+	overflow:hidden;
+	z-index:2;
+}
+#reserve .re_wrap {
+	width:300px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+#reserve .yoyaku_btn {
+	display:block;
+	float:left;
+	width: 130px;
+	height: 46px;
+	position:relative;
+	text-align:center;
+	color: #FFF;
+	font-size: 15px;
+	letter-spacing: 0em;
+	line-height:1.6em;
+	background-color: #87C357;
+	background-image:url("../images/icon_reserve.png");
+	background-position: left 15px center;
+	background-repeat:no-repeat;
+	background-size: 17px auto;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	padding-top: 10px;
+	padding-left: 20px;
+	box-sizing:border-box;
+}
+#reserve .yoyaku_btn span {
+	display:inline-block;
+	float:left;
+	width:100%;
+	font-size:10px;
+	font-family:'Abel', sans-serif;
+	font-weight:400;
+	letter-spacing:0.1em;
+	display:none;
+}
+#reserve .tel {
+	display:block;
+	float: right;
+	width: 159px;
+	position:relative;
+	padding-top: 5px;
+	box-sizing: border-box;
+}
