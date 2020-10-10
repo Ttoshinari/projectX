@@ -134,3 +134,38 @@ table{
     color: white;
     font-weight: lighter;
   }
+
+  
+  .intro h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 1rem 2rem;
+    color: #fff;
+    background: #015dac;
+    background-image: radial-gradient(#0175d5 13%, transparent 13%), radial-gradient(#0175d5 13%, transparent 13%);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+  }
+
+  .desc1 p{
+    background-color: #FFFAFA;
+    padding:10px 0px 10px 400px;
+    border: 1px solid;
+    border-top: transparent;
+  }
+
+  .intro2 {
+      margin-top: 50px;
+  }
+
+  .intro2 table {
+    margin:50px 0px 200px 300px;  
+ }
+ .intro2 th {
+    background-color:#4169E1;  
+ }
+ .intro2 td{
+    background-color: #FFFAFA;
+    border:#4169E1 0.3rem solid;
+    width: 30%;
+  }
